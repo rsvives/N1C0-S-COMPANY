@@ -291,9 +291,11 @@ main {
 
 #novedades {
     padding: 24px;
-    /* text-align: center; */
+    /* text-align: center; */;
 }
-
+.articles{
+    display: flex;
+}
 .sudaderas-sin-capucha{
     display: flex;
     flex-wrap: wrap;
@@ -389,7 +391,7 @@ main {
     background-color: #efefef;
     object-fit: cover;
 }
-
+/********************************************filtros***************************************/
 #sudaderas-sin-capucha:checked ~ .sudaderas-con-capucha , #sudaderas-sin-capucha:checked ~ .chaquetas , #sudaderas-sin-capucha:checked ~ .camisetas , #sudaderas-sin-capucha:checked ~ .jerseys {
     display: none;
 }
@@ -404,6 +406,11 @@ main {
 }
 #camisetas:checked ~ .sudaderas-con-capucha , #camisetas:checked ~ .sudaderas-sin-capucha ,#camisetas:checked ~ .chaquetas,  #camisetas:checked ~ .jerseys{
     display: none;
+}
+/********************************************filtros***************************************/
+.todo{
+    display: flex;
+    flex-wrap: wrap;
 }
 .sudaderas-con-capucha{
     display: flex;
@@ -461,7 +468,9 @@ article {
     display: none;
 }
 
-article .front {
+article
+
+.front {
     display: none;
 }
 
@@ -553,56 +562,8 @@ footer h3 {
     display: flex;
     gap: 10px;
 }
+/********************************************media*****************************************/
+@media screen and (max-width:914px){
 
-@media screen and (max-width:914px) {
-
-    .menu {
-        display: flex;
-        justify-content: space-between;
-        /* flex-direction: column; */
-        padding: 0;
-    }
-
-    /* .menu nav ul {
-        flex-direction: column;
-        text-align: justify;
-    } */
-
-    .responsive-hidden {
-        display: none;
-    }
-    .hamburguesa{
-        display: block;
-    }
-    .hamburguesa:hover
-        .responsive-hidden{
-            display: block;
-        }
-
-    article img {
-        width: 100%;
-        height: 100%;
-    }
-
-    form {
-        width: 100%;
-    }
-
-    .rows {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tienda,
-    .social {
-        flex-direction: column;
-        text-align: justify;
-    }
-
-    .rows ul {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
+    form{width: 100%;}
 }
