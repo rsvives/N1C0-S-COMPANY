@@ -146,6 +146,7 @@ a {
 }
 .articles{
     display: flex;
+    cursor: pointer;
 }
 .sudaderas-sin-capucha , .sudaderas-con-capucha , .chaquetas , .jerseys{
     display: flex;
@@ -174,7 +175,9 @@ a {
     display: none;
 }
 #chaquetas:checked ~ .articles .sudaderas-con-capucha , #chaquetas:checked ~ .articles .sudaderas-sin-capucha , #chaquetas:checked ~ .articles
-.jerseys , #chaquetas:checked ~ .articles .camisetas{
+.jerseys , #chaquetas:checked ~ .articles
+.camisetas , #chaquetas:checked ~ .articles
+.pantalones{
     display: none;
 }
 #jerseys:checked ~ .articles .sudaderas-con-capucha , #jerseys:checked ~ .articles .sudaderas-sin-capucha , #jerseys:checked ~ .articles
@@ -182,6 +185,13 @@ a {
     display: none;
 }
 #camisetas:checked ~ .articles .sudaderas-con-capucha , #camisetas:checked ~ .articles .sudaderas-sin-capucha ,#camisetas:checked ~ .articles .chaquetas,  #camisetas:checked ~ .articles .jerseys{
+    display: none;
+}
+#pantalones:checked ~ .articles .sudaderas-sin-capucha , #pantalones:checked ~
+.articles .chaquetas , #pantalones ~ .articles .sudaderas-con-capucha{
+    display: none;
+}
+#sudaderas-sin-capucha:checked ~ .articles  .pantalones{
     display: none;
 }
 /********************************************filtros***************************************/
