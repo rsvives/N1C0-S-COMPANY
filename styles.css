@@ -33,7 +33,7 @@
 }
 
 .menu nav ul li.derecha {
-    margin-left: auto;
+    margin-left: 0;
 }
 
 a {
@@ -58,7 +58,7 @@ a {
     text-align: left;
 }
 
-.hamburguesa {
+.responsive-visible {
     padding: 12px;
     border: 1px solid rgb(0, 0, 0.2);
     border-radius: 4px;
@@ -70,7 +70,7 @@ a {
     display: none;
 }
 
-.hamburguesa img {
+.responsive-visible img {
     width: 24px;
 }
 #hero , #hero-stussy , #hero-emme-studios , #hero-nude-project , #hero-stussy  {
@@ -330,8 +330,12 @@ footer h3 {
     display: flex;
     gap: 10px;
 }
+
 /********************************************media*****************************************/
 @media screen and (max-width:914px){
-
     form{width: 100%;}
+    .rows{display: flex;flex-direction: column;}
+    .tienda{display: flex;flex-direction: column;}
+    .social{display: flex;flex-direction: column;}
+
 }
