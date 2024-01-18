@@ -334,7 +334,7 @@ footer {
     background-color: #454545;
     min-height: 200px;
     bottom: 0;
-    position: static;
+
 }
 
 footer .rows .logo img {
@@ -408,11 +408,14 @@ footer h3 {
     .rows {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     .tienda {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .social {
