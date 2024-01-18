@@ -17,7 +17,7 @@ header .logo {
 
 .menu {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     background-color: #000000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -51,13 +51,22 @@ a {
     padding: 12px;
 }
 
-.button {
+/* .button {
     padding: 12px;
     color: #000c3c;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 600;
+} */
+button {
+    background-color: transparent;
+    /* border: none; */
+    cursor: pointer;
+}
+
+button:active {
+    border: #FBD23D 1px solid;
 }
 
 .derecha {
@@ -68,17 +77,13 @@ a {
     padding: 12px;
     border: 1px solid #000000;
     border-radius: 4px;
-    display: flex;
     display: none;
 }
 
-.responsive-visible {
+.responsive-visible input {
     display: none;
 }
 
-/* .responsive-visible img {
-    width: 24px;
-} */
 
 #hero,
 #hero-stussy,
@@ -395,10 +400,32 @@ footer h3 {
 
     .responsive-hidden {
         display: none;
+
     }
 
     .responsive-visible {
         display: block;
+    }
+
+    .menu:has(input:checked) .responsive-hidden {
+        display: block;
+        position: absolute;
+        top: 106px;
+        right: 0;
+        background-color: #000;
+        padding: 12px 32px;
+        padding-right: 12px;
+        width: auto;
+    }
+
+    .menu nav.responsive-hidden ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .menu nav ul li.derecha {
+        margin-left: unset;
     }
 
     form {
