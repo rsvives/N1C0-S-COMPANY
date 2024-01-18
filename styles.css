@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -51,7 +53,7 @@ a {
 
 .button {
     padding: 12px;
-    color: rgb(0, 12, 60);
+    color: #000c3c;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -64,7 +66,7 @@ a {
 
 .responsive-visible {
     padding: 12px;
-    border: 1px solid rgb(0, 0, 0.2);
+    border: 1px solid #000000;
     border-radius: 4px;
     display: flex;
     display: none;
@@ -85,8 +87,8 @@ a {
 #hero-stussy {
     background-image: url("./IMG/Colas.avif");
     background-size: cover;
-    height: 1440px;
-    max-width: 10000px;
+    background-position: 50%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,14 +98,6 @@ a {
 
 #hero-emme-studios {
     background-image: url(./IMG/emme-studios/cover.avif);
-    background-size: cover;
-    height: 1440px;
-    max-width: 10000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
 }
 
 #hero-stussy {
@@ -149,13 +143,18 @@ a {
 #hero-stone-island .contenido a,
 #hero-nude-project .contenido a {
     /* display: block; */
-    width: 50px;
-    font-weight: 700;
+    /* width: 50px; */
+    border: 2px solid #000;
     border-radius: 10px;
-    margin: 150px;
+    /* margin: 150px; */
     padding: 15px 30px;
-    background-color: #d1d1d1b9;
-    color: #fff;
+    background-color: transparent;
+    color: #000;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
     text-decoration: none;
 }
 
@@ -163,16 +162,15 @@ a {
 #hero-emme-studios .contenido a:hover,
 #hero-stussy .contenido a:hover,
 #hero-stone-island .contenido a:hover {
-    background-color: transparent;
-    border: 2px solid #d1d1d1b9;
-    color: #d1d1d1b9;
+    background-color: #00000020;
+
 }
 
-#hero input,
+/* #hero input,
 #hero-emme-studios input,
 #hero-stussy input {
     background-color: #454545;
-}
+} */
 
 #novedades {
     padding: 24px;
