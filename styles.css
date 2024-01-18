@@ -5,7 +5,8 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.logo , .menu nav{
+.logo,
+.menu nav {
     width: 100px;
 }
 
@@ -73,7 +74,12 @@ a {
 .responsive-visible img {
     width: 24px;
 }
-#hero , #hero-stussy , #hero-emme-studios , #hero-nude-project , #hero-stussy  {
+
+#hero,
+#hero-stussy,
+#hero-emme-studios,
+#hero-nude-project,
+#hero-stussy {
     background-image: url("./IMG/Colas.avif");
     background-size: cover;
     height: 1440px;
@@ -81,10 +87,11 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     font-size: 50px;
 }
-#hero-emme-studios{
+
+#hero-emme-studios {
     background-image: url(./IMG/emme-studios/cover.avif);
     background-size: cover;
     height: 1440px;
@@ -92,26 +99,32 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     font-size: 50px;
 }
 
-#hero-stussy{
+#hero-stussy {
     background-image: url(./IMG/Stussy/cover.avif);
 }
 
-#hero-emme-studios{
+#hero-emme-studios {
     background-image: url(./IMG/emme-studios/cover.avif
-    );
+);
 }
 
-#hero-stone-island{
+#hero-stone-island {
     background-image: url(./IMG/Stone-Island/cover.avif);
 }
-#hero-nude-project{
+
+#hero-nude-project {
     background-image: url(./IMG/nude-project/cover.avif);
 }
-#hero .contenido, #hero-emme-studios .contenido , #hero-stussy .contenido , #hero-nude-project .contenido , #hero-stone-island .contenido{
+
+#hero .contenido,
+#hero-emme-studios .contenido,
+#hero-stussy .contenido,
+#hero-nude-project .contenido,
+#hero-stone-island .contenido {
     /* color: #e8e9e9; */
     border: hsl(0, 0%, 27%);
     background: #FBD23D;
@@ -119,40 +132,66 @@ a {
     padding: 25px;
     text-align: center;
 }
-#hero .contenido p , #hero-emme-studios .contenido p , #hero-stussy .contenido p , #hero-nude-project .contenido p{
+
+#hero .contenido p,
+#hero-emme-studios .contenido p,
+#hero-stussy .contenido p,
+#hero-nude-project .contenido p {
     font-size: 25px;
 }
-#hero .contenido a , #hero-emme-studios .contenido a , #hero-stussy .contenido a , #hero-stone-island .contenido a , #hero-nude-project .contenido a{
+
+#hero .contenido a,
+#hero-emme-studios .contenido a,
+#hero-stussy .contenido a,
+#hero-stone-island .contenido a,
+#hero-nude-project .contenido a {
     /* display: block; */
     width: 50px;
     font-weight: 700;
     border-radius: 10px;
-    margin: 150px ;
+    margin: 150px;
     padding: 15px 30px;
     background-color: #d1d1d1b9;
     color: #fff;
     text-decoration: none;
 }
-#hero .contenido a:hover , #hero-emme-studios .contenido a:hover , #hero-stussy .contenido a:hover , #hero-stone-island .contenido a:hover{
+
+#hero .contenido a:hover,
+#hero-emme-studios .contenido a:hover,
+#hero-stussy .contenido a:hover,
+#hero-stone-island .contenido a:hover {
     background-color: transparent;
     border: 2px solid #d1d1d1b9;
     color: #d1d1d1b9;
 }
-#hero input , #hero-emme-studios input , #hero-stussy input{
+
+#hero input,
+#hero-emme-studios input,
+#hero-stussy input {
     background-color: #454545;
 }
+
 #novedades {
     padding: 24px;
 }
-.articles{
+
+.articles {
     display: flex;
     cursor: pointer;
 }
-.sudaderas-sin-capucha , .sudaderas-con-capucha , .chaquetas , .jerseys{
+
+.sudaderas-sin-capucha,
+.sudaderas-con-capucha,
+.chaquetas,
+.jerseys {
     display: flex;
     flex-wrap: wrap;
 }
-.sudaderas-sin-capucha article , .sudaderas-con-capucha article , .chaquetas article , .jerseys{
+
+.sudaderas-sin-capucha article,
+.sudaderas-con-capucha article,
+.chaquetas article,
+.jerseys {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -160,40 +199,65 @@ a {
     padding: 24px;
     background-color: #FFF;
 }
-.sudaderas-sin-capucha img , .sudaderas-con-capucha img , .chaquetas img, .jerseys img {
+
+.sudaderas-sin-capucha img,
+.sudaderas-con-capucha img,
+.chaquetas img,
+.jerseys img {
     max-width: 300px;
     width: 100%;
     min-width: 200px;
     background-color: #efefef;
     object-fit: cover;
 }
+
 /********************************************filtros***************************************/
-#sudaderas-sin-capucha:checked ~ .articles .sudaderas-con-capucha , #sudaderas-sin-capucha:checked ~ .articles .chaquetas , #sudaderas-sin-capucha:checked ~ .articles .camisetas , #sudaderas-sin-capucha:checked ~ .articles .jerseys {
+#sudaderas-sin-capucha:checked~.articles .sudaderas-con-capucha,
+#sudaderas-sin-capucha:checked~.articles .chaquetas,
+#sudaderas-sin-capucha:checked~.articles .camisetas,
+#sudaderas-sin-capucha:checked~.articles .jerseys {
     display: none;
 }
-#sudaderas-con-capucha:checked ~ .articles .sudaderas-sin-capucha , #sudaderas-con-capucha:checked ~ .articles .chaquetas, #sudaderas-con-capucha:checked ~  .articles .jerseys , #sudaderas-con-capucha:checked ~ .articles .camisetas{
+
+#sudaderas-con-capucha:checked~.articles .sudaderas-sin-capucha,
+#sudaderas-con-capucha:checked~.articles .chaquetas,
+#sudaderas-con-capucha:checked~.articles .jerseys,
+#sudaderas-con-capucha:checked~.articles .camisetas {
     display: none;
 }
-#chaquetas:checked ~ .articles .sudaderas-con-capucha , #chaquetas:checked ~ .articles .sudaderas-sin-capucha , #chaquetas:checked ~ .articles
-.jerseys , #chaquetas:checked ~ .articles
-.camisetas , #chaquetas:checked ~ .articles
-.pantalones{
+
+#chaquetas:checked~.articles .sudaderas-con-capucha,
+#chaquetas:checked~.articles .sudaderas-sin-capucha,
+#chaquetas:checked~.articles .jerseys,
+#chaquetas:checked~.articles .camisetas,
+#chaquetas:checked~.articles .pantalones {
     display: none;
 }
-#jerseys:checked ~ .articles .sudaderas-con-capucha , #jerseys:checked ~ .articles .sudaderas-sin-capucha , #jerseys:checked ~ .articles
-.camisetas , #jerseys:checked ~ .articles .chaquetas{
+
+#jerseys:checked~.articles .sudaderas-con-capucha,
+#jerseys:checked~.articles .sudaderas-sin-capucha,
+#jerseys:checked~.articles .camisetas,
+#jerseys:checked~.articles .chaquetas {
     display: none;
 }
-#camisetas:checked ~ .articles .sudaderas-con-capucha , #camisetas:checked ~ .articles .sudaderas-sin-capucha ,#camisetas:checked ~ .articles .chaquetas,  #camisetas:checked ~ .articles .jerseys{
+
+#camisetas:checked~.articles .sudaderas-con-capucha,
+#camisetas:checked~.articles .sudaderas-sin-capucha,
+#camisetas:checked~.articles .chaquetas,
+#camisetas:checked~.articles .jerseys {
     display: none;
 }
-#pantalones:checked ~ .articles .sudaderas-sin-capucha , #pantalones:checked ~
-.articles .chaquetas , #pantalones ~ .articles .sudaderas-con-capucha{
+
+#pantalones:checked~.articles .sudaderas-sin-capucha,
+#pantalones:checked~.articles .chaquetas,
+#pantalones~.articles .sudaderas-con-capucha {
     display: none;
 }
-#sudaderas-sin-capucha:checked ~ .articles  .pantalones{
+
+#sudaderas-sin-capucha:checked~.articles .pantalones {
     display: none;
 }
+
 /********************************************filtros***************************************/
 .articles {
     display: flex;
@@ -201,8 +265,6 @@ a {
     flex-wrap: wrap;
     gap: 24px;
     margin-top: 24px;
-}
-.articles{
     object-fit: cover;
 }
 
@@ -213,6 +275,9 @@ a {
     align-items: center;
     padding: 24px;
     background-color: #FFF;
+    padding: 50px;
+    width: 283px;
+    height: 383px;
 }
 
 article img {
@@ -220,12 +285,6 @@ article img {
     height: 300px;
     background-color: #efefef;
     object-fit: cover;
-}
-
-article {
-    padding: 50px;
-    width: 283px;
-    height: 383px;
 }
 
 .front {
@@ -236,9 +295,7 @@ article {
     display: none;
 }
 
-article
-
-.front {
+article .front {
     display: none;
 }
 
@@ -332,10 +389,24 @@ footer h3 {
 }
 
 /********************************************media*****************************************/
-@media screen and (max-width:914px){
-    form{width: 100%;}
-    .rows{display: flex;flex-direction: column;}
-    .tienda{display: flex;flex-direction: column;}
-    .social{display: flex;flex-direction: column;}
+@media screen and (max-width:914px) {
+    form {
+        width: 100%;
+    }
+
+    .rows {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tienda {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social {
+        display: flex;
+        flex-direction: column;
+    }
 
 }
