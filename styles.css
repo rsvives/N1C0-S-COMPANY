@@ -76,9 +76,9 @@ a {
     display: none;
 }
 
-.responsive-visible img {
+/* .responsive-visible img {
     width: 24px;
-}
+} */
 
 #hero,
 #hero-stussy,
@@ -88,11 +88,12 @@ a {
     background-image: url("./IMG/Colas.avif");
     background-size: cover;
     background-position: 50%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 24px;
 }
 
 #hero-emme-studios {
@@ -104,8 +105,7 @@ a {
 }
 
 #hero-emme-studios {
-    background-image: url(./IMG/emme-studios/cover.avif
-);
+    background-image: url(./IMG/emme-studios/cover.avif);
 }
 
 #hero-stone-island {
@@ -121,9 +121,13 @@ a {
 #hero-stussy .contenido,
 #hero-nude-project .contenido,
 #hero-stone-island .contenido {
+    border-radius: 8px;
     background: #FBD23D;
     padding: 25px;
     text-align: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 24px;
 }
 
 #hero .contenido h1,
@@ -182,7 +186,7 @@ a {
 .sudaderas-sin-capucha article,
 .sudaderas-con-capucha article,
 .chaquetas article,
-.jerseys {
+.jerseys article {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -198,7 +202,6 @@ a {
     max-width: 300px;
     width: 100%;
     min-width: 200px;
-    background-color: #efefef;
     object-fit: cover;
 }
 
@@ -254,7 +257,7 @@ a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 48px;
     margin-top: 24px;
     object-fit: cover;
 }
@@ -264,17 +267,15 @@ a {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: #efefef;
+    width: 100%;
+    max-width: 300px;
     padding: 24px;
-    background-color: #FFF;
-    padding: 50px;
-    width: 283px;
-    height: 383px;
+
 }
 
 article img {
     width: 300px;
-    height: 300px;
-    background-color: #efefef;
     object-fit: cover;
 }
 
@@ -297,10 +298,11 @@ article .front {
 form {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
+    max-width: 800px;
     padding: 50px;
-    width: 1000px;
     border-radius: 25px;
+    margin: auto;
 }
 
 h2 {
@@ -315,7 +317,7 @@ label {
 input,
 textarea {
     padding: 17px 14px;
-    border: 0;
+    border: 1px solid black;
     margin-bottom: 20px;
     border-radius: 10px;
     color: #000000;
@@ -379,8 +381,26 @@ footer h3 {
     gap: 10px;
 }
 
+.ph {
+    font-size: 32px;
+    color: white;
+}
+
 /********************************************media*****************************************/
 @media screen and (max-width:914px) {
+
+    #hero {
+        height: 80vh;
+    }
+
+    .responsive-hidden {
+        display: none;
+    }
+
+    .responsive-visible {
+        display: block;
+    }
+
     form {
         width: 100%;
     }
