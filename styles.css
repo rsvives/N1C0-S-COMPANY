@@ -39,7 +39,7 @@ header .logo {
 }
 
 .menu nav ul li.derecha {
-    margin-left: 0;
+    margin-left: auto;
 }
 
 a {
