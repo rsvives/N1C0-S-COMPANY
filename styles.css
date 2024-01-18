@@ -5,9 +5,12 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.logo,
-.menu nav {
+header .logo {
     width: 100px;
+}
+
+.menu nav {
+    width: 100%;
 }
 
 .menu {
