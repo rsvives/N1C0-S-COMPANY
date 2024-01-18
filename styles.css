@@ -7,6 +7,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+
 header .logo {
     width: 100px;
 }
@@ -59,19 +60,19 @@ a {
     font-size: 16px;
     font-weight: 600;
 } */
-button {
+/* button {
     background-color: transparent;
-    /* border: none; */
     cursor: pointer;
 }
 
 button:active {
     border: #FBD23D 1px solid;
-}
+} */
 
 .derecha {
     text-align: left;
 }
+
 
 .responsive-visible {
     padding: 12px;
@@ -84,13 +85,13 @@ button:active {
     display: none;
 }
 
+main {
+    min-height: 85vh;
+}
 
-#hero,
-#hero-stussy,
-#hero-emme-studios,
-#hero-nude-project,
-#hero-stussy {
-    background-image: url("./IMG/Colas.avif");
+
+.hero {
+
     background-size: cover;
     background-position: 50%;
     height: 100vh;
@@ -99,6 +100,10 @@ button:active {
     justify-content: center;
     align-items: center;
     padding: 24px;
+}
+
+#hero {
+    background-image: url("./IMG/Colas.avif");
 }
 
 #hero-emme-studios {
@@ -121,11 +126,7 @@ button:active {
     background-image: url(./IMG/nude-project/cover.avif);
 }
 
-#hero .contenido,
-#hero-emme-studios .contenido,
-#hero-stussy .contenido,
-#hero-nude-project .contenido,
-#hero-stone-island .contenido {
+.hero .contenido {
     border-radius: 8px;
     background: #FBD23D;
     padding: 25px;
@@ -135,19 +136,13 @@ button:active {
     margin: 24px;
 }
 
-#hero .contenido h1,
-#hero-emme-studios .contenido h1,
-#hero-stussy .contenido h1,
-#hero-nude-project .contenido h1 {
+.hero .contenido h1 {
     font-size: 48px;
     margin-bottom: 32px;
 }
 
-#hero .contenido a,
-#hero-emme-studios .contenido a,
-#hero-stussy .contenido a,
-#hero-stone-island .contenido a,
-#hero-nude-project .contenido a {
+.contenido a.btn,
+.btn {
     display: inline-block;
     border: 2px solid #000;
     border-radius: 10px;
@@ -160,6 +155,7 @@ button:active {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+    width: fit-content;
 }
 
 #hero .contenido a:hover,
@@ -177,38 +173,36 @@ button:active {
 
 .articles {
     display: flex;
-    cursor: pointer;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 48px;
+    margin-top: 24px;
+    object-fit: cover;
 }
 
-.sudaderas-sin-capucha,
-.sudaderas-con-capucha,
-.chaquetas,
-.jerseys {
+.articles article {
     display: flex;
     flex-wrap: wrap;
-}
-
-.sudaderas-sin-capucha article,
-.sudaderas-con-capucha article,
-.chaquetas article,
-.jerseys article {
-    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color: #efefef;
+    width: 100%;
+    max-width: 300px;
     padding: 24px;
-    background-color: #FFF;
+
 }
 
-.sudaderas-sin-capucha img,
-.sudaderas-con-capucha img,
-.chaquetas img,
-.jerseys img {
+.articles article img {
+    width: 300px;
+    object-fit: cover;
     max-width: 300px;
     width: 100%;
     min-width: 200px;
     object-fit: cover;
 }
+
+
 
 /********************************************filtros***************************************/
 #sudaderas-sin-capucha:checked~.articles .sudaderas-con-capucha,
@@ -258,31 +252,7 @@ button:active {
 }
 
 /********************************************filtros***************************************/
-.articles {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 48px;
-    margin-top: 24px;
-    object-fit: cover;
-}
 
-.articles article {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-color: #efefef;
-    width: 100%;
-    max-width: 300px;
-    padding: 24px;
-
-}
-
-article img {
-    width: 300px;
-    object-fit: cover;
-}
 
 .front {
     display: block;
@@ -323,17 +293,12 @@ input,
 textarea {
     padding: 17px 14px;
     border: 1px solid black;
-    margin-bottom: 20px;
+    margin: 12px 0 20px;
     border-radius: 10px;
     color: #000000;
 }
 
-.btn {
-    width: 150px;
-    align-self: center;
-    cursor: pointer;
-    color: black;
-}
+
 
 footer {
     background-color: #454545;
