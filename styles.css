@@ -43,31 +43,30 @@ header .logo {
     margin-left: auto;
 }
 
+
+
 a {
-    color: #e8e9e9;
-    text-decoration: none;
     font-size: 20px;
     font-weight: 600;
     text-transform: capitalize;
     padding: 12px;
+    color: #FBD23D;
 }
 
-/* .button {
-    padding: 12px;
-    color: #000c3c;
+a:hover {
+    color: #fbd23dd0;
+
+}
+
+.menu a,
+footer a {
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 600;
-} */
-/* button {
-    background-color: transparent;
-    cursor: pointer;
+    color: #e8e9e9;
+
+
 }
 
-button:active {
-    border: #FBD23D 1px solid;
-} */
+
 
 .derecha {
     text-align: left;
@@ -81,7 +80,9 @@ button:active {
     display: none;
 }
 
-.responsive-visible input {
+.responsive-visible color: #e8e9e9;
+
+t {
     display: none;
 }
 
@@ -141,7 +142,7 @@ main {
     margin-bottom: 32px;
 }
 
-.contenido a.btn,
+.btn,
 .btn {
     display: inline-block;
     border: 2px solid #000;
@@ -158,11 +159,10 @@ main {
     width: fit-content;
 }
 
-#hero .contenido a:hover,
-#hero-emme-studios .contenido a:hover,
-#hero-stussy .contenido a:hover,
-#hero-stone-island .contenido a:hover {
+.btn:hover {
     background-color: #00000020;
+    cursor: pointer;
+    color: #000;
 
 }
 
@@ -291,11 +291,16 @@ label {
 
 input,
 textarea {
-    padding: 17px 14px;
+    padding: 12px 14px;
     border: 1px solid black;
     margin: 12px 0 20px;
     border-radius: 10px;
     color: #000000;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: #FBD23D 1px auto;
 }
 
 
