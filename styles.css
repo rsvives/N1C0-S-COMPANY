@@ -93,7 +93,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 50px;
 }
 
 #hero-emme-studios {
@@ -122,19 +121,17 @@ a {
 #hero-stussy .contenido,
 #hero-nude-project .contenido,
 #hero-stone-island .contenido {
-    /* color: #e8e9e9; */
-    border: hsl(0, 0%, 27%);
     background: #FBD23D;
-    margin: 150px 150px 150px 150px;
     padding: 25px;
     text-align: center;
 }
 
-#hero .contenido p,
-#hero-emme-studios .contenido p,
-#hero-stussy .contenido p,
-#hero-nude-project .contenido p {
-    font-size: 25px;
+#hero .contenido h1,
+#hero-emme-studios .contenido h1,
+#hero-stussy .contenido h1,
+#hero-nude-project .contenido h1 {
+    font-size: 48px;
+    margin-bottom: 32px;
 }
 
 #hero .contenido a,
@@ -142,11 +139,9 @@ a {
 #hero-stussy .contenido a,
 #hero-stone-island .contenido a,
 #hero-nude-project .contenido a {
-    /* display: block; */
-    /* width: 50px; */
+    display: inline-block;
     border: 2px solid #000;
     border-radius: 10px;
-    /* margin: 150px; */
     padding: 15px 30px;
     background-color: transparent;
     color: #000;
@@ -166,11 +161,6 @@ a {
 
 }
 
-/* #hero input,
-#hero-emme-studios input,
-#hero-stussy input {
-    background-color: #454545;
-} */
 
 #novedades {
     padding: 24px;
