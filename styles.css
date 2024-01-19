@@ -7,7 +7,6 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-
 header .logo {
     width: 100px;
 }
@@ -36,14 +35,11 @@ header .logo {
 
 .menu nav ul .active {
     border-bottom: #FBD23D 5px solid;
-
 }
 
 .menu nav ul li.derecha {
     margin-left: auto;
 }
-
-
 
 a {
     font-size: 20px;
@@ -55,23 +51,16 @@ a {
 
 a:hover {
     color: #fbd23dd0;
-
 }
 
-.menu a,
-footer a {
+.menu a,footer a {
     text-decoration: none;
     color: #e8e9e9;
-
-
 }
-
-
 
 .derecha {
     text-align: left;
 }
-
 
 .responsive-visible {
     padding: 12px;
@@ -90,7 +79,6 @@ main {
 
 
 .hero {
-
     background-size: cover;
     background-position: 50%;
     height: 100vh;
@@ -140,8 +128,7 @@ main {
     margin-bottom: 32px;
 }
 
-.btn,
-.btn {
+.btn,.btn {
     display: inline-block;
     border: 2px solid #000;
     border-radius: 10px;
@@ -163,7 +150,6 @@ main {
     color: #000;
 
 }
-
 
 #novedades {
     padding: 24px;
@@ -200,9 +186,8 @@ main {
     object-fit: cover;
 }
 
-
-
 /********************************************filtros***************************************/
+
 #sudaderas-sin-capucha:checked~.articles .sudaderas-con-capucha,
 #sudaderas-sin-capucha:checked~.articles .chaquetas,
 #sudaderas-sin-capucha:checked~.articles .camisetas,
@@ -301,8 +286,6 @@ textarea:focus-visible {
     outline: #FBD23D 1px auto;
 }
 
-
-
 footer {
     background-color: #454545;
     min-height: 200px;
@@ -360,6 +343,7 @@ footer h3 {
 }
 
 /********************************************media*****************************************/
+
 @media screen and (max-width:914px) {
 
     #hero {
@@ -368,7 +352,6 @@ footer h3 {
 
     .responsive-hidden {
         display: none;
-
     }
 
     .responsive-visible {
@@ -417,5 +400,4 @@ footer h3 {
         display: flex;
         flex-direction: column;
     }
-
 }
