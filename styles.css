@@ -251,7 +251,6 @@ main {
 
 /********************************************filtros***************************************/
 
-
 .front {
     display: block;
 }
@@ -260,13 +259,14 @@ main {
     display: none;
 }
 
-article .front {
+article:hover .front{
     display: none;
 }
 
-.back {
+article:hover .back {
     display: block;
 }
+
 
 form {
     display: flex;
