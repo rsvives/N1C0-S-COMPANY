@@ -8,11 +8,11 @@
 }
 
 header .logo {
-    width: 100px;
+    max-width: 100%;
 }
 
 .menu nav {
-    width: 100%;
+    max-width: 100%;
 }
 
 .menu {
@@ -30,7 +30,7 @@ header .logo {
 .menu nav ul {
     display: flex;
     gap: 12px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .menu nav ul .active {
@@ -81,7 +81,7 @@ main {
 .hero {
     background-size: cover;
     background-position: 50%;
-    height: 100vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -91,8 +91,6 @@ main {
 
 #hero {
     background-image: url("./IMG/Colas.avif");
-    width: 1333px;
-    height: 1047px;
 }
 
 #hero-stussy {
@@ -240,18 +238,20 @@ article .back {
 
 article:hover .front{
     display: none;
+    cursor: pointer;
 }
 
 article:hover .back {
     display: block;
+    cursor: pointer;
 }
 
 
 form {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 800px;
+    min-width: 100%;
+    max-width: 800%;
     padding: 50px;
     border-radius: 25px;
     margin: auto;
@@ -322,7 +322,6 @@ footer h3 {
 .logo {
     display: flex;
     place-content: center;
-
 }
 
 .social ul {
@@ -341,6 +340,11 @@ footer h3 {
 
     #hero {
         height: 80vh;
+    }
+
+    .logo {
+    max-width: 48px;
+    max-height: 48px;
     }
 
     .responsive-hidden {
