@@ -173,57 +173,9 @@ main {
     max-width: 300px;
     width: 100%;
     min-width: 200px;
+    width: 252px;
+    height: 320.26px;
 }
-
-/********************************************filtros***************************************/
-
-#sudaderas-sin-capucha:checked~.articles .sudaderas-con-capucha,
-#sudaderas-sin-capucha:checked~.articles .chaquetas,
-#sudaderas-sin-capucha:checked~.articles .camisetas,
-#sudaderas-sin-capucha:checked~.articles .jerseys {
-    display: none;
-}
-
-#sudaderas-con-capucha:checked~.articles .sudaderas-sin-capucha,
-#sudaderas-con-capucha:checked~.articles .chaquetas,
-#sudaderas-con-capucha:checked~.articles .jerseys,
-#sudaderas-con-capucha:checked~.articles .camisetas {
-    display: none;
-}
-
-#chaquetas:checked~.articles .sudaderas-con-capucha,
-#chaquetas:checked~.articles .sudaderas-sin-capucha,
-#chaquetas:checked~.articles .jerseys,
-#chaquetas:checked~.articles .camisetas,
-#chaquetas:checked~.articles .pantalones {
-    display: none;
-}
-
-#jerseys:checked~.articles .sudaderas-con-capucha,
-#jerseys:checked~.articles .sudaderas-sin-capucha,
-#jerseys:checked~.articles .camisetas,
-#jerseys:checked~.articles .chaquetas {
-    display: none;
-}
-
-#camisetas:checked~.articles .sudaderas-con-capucha,
-#camisetas:checked~.articles .sudaderas-sin-capucha,
-#camisetas:checked~.articles .chaquetas,
-#camisetas:checked~.articles .jerseys {
-    display: none;
-}
-
-#pantalones:checked~.articles .sudaderas-sin-capucha,
-#pantalones:checked~.articles .chaquetas,
-#pantalones~.articles .sudaderas-con-capucha {
-    display: none;
-}
-
-#sudaderas-sin-capucha:checked~.articles .pantalones {
-    display: none;
-}
-
-/********************************************filtros***************************************/
 
 article .front {
     display: block;
@@ -242,7 +194,6 @@ article:hover .back {
     display: block;
     cursor: pointer;
 }
-
 
 form {
     display: flex;
@@ -330,6 +281,58 @@ footer h3 {
     font-size: 32px;
     color: white;
 }
+
+/********************************************filtros***************************************/
+
+#sudaderas-sin-capucha:checked~.articles .sudaderas-con-capucha,
+#sudaderas-sin-capucha:checked~.articles .chaquetas,
+#sudaderas-sin-capucha:checked~.articles .camisetas,
+#sudaderas-sin-capucha:checked~.articles .jerseys, #sudaderas-sin-capucha:checked~.articles .pantalones {
+    display: none;
+}
+
+#sudaderas-con-capucha:checked~.articles .sudaderas-sin-capucha,
+#sudaderas-con-capucha:checked~.articles .chaquetas,
+#sudaderas-con-capucha:checked~.articles .jerseys,
+#sudaderas-con-capucha:checked~.articles .camisetas, #sudaderas-con-capucha:checked~.articles .pantalones {
+    display: none;
+}
+#pantalones:checked~.articles .sudaderas-sin-capucha,
+#pantalones:checked~.articles .chaquetas,
+#pantalones:checked~.articles .jerseys,
+#pantalones:checked~.articles .camisetas, #pantalones:checked~.articles .sudaderas-con-capucha {
+    display: none;
+}
+
+#chaquetas:checked~.articles .sudaderas-con-capucha,
+#chaquetas:checked~.articles .sudaderas-sin-capucha,
+#chaquetas:checked~.articles .jerseys,
+#chaquetas:checked~.articles .camisetas,
+#chaquetas:checked~.articles .pantalones {
+    display: none;
+}
+
+#jerseys:checked~.articles .sudaderas-con-capucha,
+#jerseys:checked~.articles .sudaderas-sin-capucha,
+#jerseys:checked~.articles .camisetas,
+#jerseys:checked~.articles .chaquetas, #jerseys:checked~.articles .pantalones{
+    display: none;
+}
+
+#camisetas:checked~.articles .sudaderas-con-capucha,
+#camisetas:checked~.articles .sudaderas-sin-capucha,
+#camisetas:checked~.articles .chaquetas,
+#camisetas:checked~.articles .jerseys, #camisetas:checked~.articles .pantalones {
+    display: none;
+}
+
+#pantalones:checked~.articles .sudaderas-sin-capucha,
+#pantalones:checked~.articles .chaquetas,
+#pantalones~.articles .sudaderas-con-capucha {
+    display: none;
+}
+
+/********************************************filtros***************************************/
 
 /********************************************media*****************************************/
 
