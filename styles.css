@@ -91,14 +91,12 @@ main {
 
 #hero {
     background-image: url("./IMG/Colas.avif");
-}
-
-#hero-emme-studios {
-    background-image: url(./IMG/emme-studios/cover.avif);
+    width: 1333px;
+    height: 1047px;
 }
 
 #hero-stussy {
-    background-image: url(./IMG/Stussy/cover.avif);
+    background-image: url(./IMG/Stussy/cover.avif)
 }
 
 #hero-emme-studios {
@@ -135,7 +133,6 @@ main {
     padding: 15px 30px;
     background-color: transparent;
     color: #000;
-
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -148,7 +145,6 @@ main {
     background-color: #00000020;
     cursor: pointer;
     color: #000;
-
 }
 
 #novedades {
@@ -174,7 +170,6 @@ main {
     width: 100%;
     max-width: 300px;
     padding: 24px;
-
 }
 
 .articles article img {
@@ -183,7 +178,6 @@ main {
     max-width: 300px;
     width: 100%;
     min-width: 200px;
-    object-fit: cover;
 }
 
 /********************************************filtros***************************************/
@@ -236,11 +230,11 @@ main {
 
 /********************************************filtros***************************************/
 
-.front {
+article .front {
     display: block;
 }
 
-.back {
+article .back {
     display: none;
 }
 
@@ -294,7 +288,6 @@ footer {
 }
 
 footer .rows .logo img {
-
     max-width: 150px;
 }
 
