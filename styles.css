@@ -168,10 +168,8 @@ main {
 }
 
 .articles article img {
-    width: 300px;
-    object-fit: cover;
-    max-width: 300px;
-    width: 100%;
+    max-width: 252px;
+    max-height: 320.26px;
     min-width: 200px;
 }
 
@@ -212,8 +210,7 @@ label {
     margin-bottom: 10px;
 }
 
-input,
-textarea {
+input, textarea {
     padding: 12px 14px;
     border: 1px solid black;
     margin: 12px 0 20px;
@@ -221,8 +218,7 @@ textarea {
     color: #000000;
 }
 
-input:focus-visible,
-textarea:focus-visible {
+input:focus-visible, textarea:focus-visible {
     outline: #FBD23D 1px auto;
 }
 
@@ -257,8 +253,7 @@ footer h3 {
     width: 33%;
 }
 
-.tienda,
-.social {
+.tienda, .social {
     display: flex;
     place-items: center;
     flex-direction: column;
@@ -282,51 +277,32 @@ footer h3 {
 
 /********************************************filtros***************************************/
 
-#sudaderas-sin-capucha:checked~.articles .sudaderas-con-capucha,
-#sudaderas-sin-capucha:checked~.articles .chaquetas,
-#sudaderas-sin-capucha:checked~.articles .camisetas,
-#sudaderas-sin-capucha:checked~.articles .jerseys, #sudaderas-sin-capucha:checked~.articles .pantalones {
+#sudaderas-sin-capucha:checked~.articles .sudaderas-con-capucha,#sudaderas-sin-capucha:checked~.articles .chaquetas, #sudaderas-sin-capucha:checked~.articles .camisetas, #sudaderas-sin-capucha:checked~.articles .jerseys, #sudaderas-sin-capucha:checked~.articles .pantalones {
     display: none;
 }
 
-#sudaderas-con-capucha:checked~.articles .sudaderas-sin-capucha,
-#sudaderas-con-capucha:checked~.articles .chaquetas,
-#sudaderas-con-capucha:checked~.articles .jerseys,
-#sudaderas-con-capucha:checked~.articles .camisetas, #sudaderas-con-capucha:checked~.articles .pantalones {
+#sudaderas-con-capucha:checked~.articles .sudaderas-sin-capucha, #sudaderas-con-capucha:checked~.articles .chaquetas, #sudaderas-con-capucha:checked~.articles .jerseys, #sudaderas-con-capucha:checked~.articles .camisetas, #sudaderas-con-capucha:checked~.articles .pantalones {
     display: none;
 }
-#pantalones:checked~.articles .sudaderas-sin-capucha,
-#pantalones:checked~.articles .chaquetas,
-#pantalones:checked~.articles .jerseys,
-#pantalones:checked~.articles .camisetas, #pantalones:checked~.articles .sudaderas-con-capucha {
+#pantalones:checked~.articles .sudaderas-sin-capucha, #pantalones:checked~.articles .chaquetas, #pantalones:checked~.articles .jerseys, #pantalones:checked~.articles .camisetas, #pantalones:checked~.articles .sudaderas-con-capucha {
     display: none;
 }
 
-#chaquetas:checked~.articles .sudaderas-con-capucha,
-#chaquetas:checked~.articles .sudaderas-sin-capucha,
-#chaquetas:checked~.articles .jerseys,
-#chaquetas:checked~.articles .camisetas,
-#chaquetas:checked~.articles .pantalones {
+#chaquetas:checked~.articles .sudaderas-con-capucha, #chaquetas:checked~.articles .sudaderas-sin-capucha, #chaquetas:checked~.articles .jerseys, #chaquetas:checked~.articles .camisetas, #chaquetas:checked~.articles .pantalones {
     display: none;
 }
 
-#jerseys:checked~.articles .sudaderas-con-capucha,
-#jerseys:checked~.articles .sudaderas-sin-capucha,
-#jerseys:checked~.articles .camisetas,
+#jerseys:checked~.articles .sudaderas-con-capucha, #jerseys:checked~.articles .sudaderas-sin-capucha, #jerseys:checked~.articles .camisetas,
 #jerseys:checked~.articles .chaquetas, #jerseys:checked~.articles .pantalones{
     display: none;
 }
 
-#camisetas:checked~.articles .sudaderas-con-capucha,
-#camisetas:checked~.articles .sudaderas-sin-capucha,
-#camisetas:checked~.articles .chaquetas,
+#camisetas:checked~.articles .sudaderas-con-capucha, #camisetas:checked~.articles .sudaderas-sin-capucha, #camisetas:checked~.articles .chaquetas,
 #camisetas:checked~.articles .jerseys, #camisetas:checked~.articles .pantalones {
     display: none;
 }
 
-#pantalones:checked~.articles .sudaderas-sin-capucha,
-#pantalones:checked~.articles .chaquetas,
-#pantalones~.articles .sudaderas-con-capucha {
+#pantalones:checked~.articles .sudaderas-sin-capucha, #pantalones:checked~.articles .chaquetas, #pantalones~.articles .sudaderas-con-capucha {
     display: none;
 }
 
